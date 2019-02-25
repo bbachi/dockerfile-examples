@@ -1,0 +1,12 @@
+# from base image node
+FROM node:8.11-slim
+
+ENV workdirectory /usr/node
+
+WORKDIR $workdirectory
+WORKDIR app
+
+RUN pwd
+
+# command executable and version
+ENTRYPOINT ["node"]
